@@ -37,6 +37,8 @@ const MainSection = () => {
       <div className="z-10 relative">
         <h1 className="text-4xl font-semibold">{data.main.title}</h1>
         <h4  className="text-2xl pt-3">{data.main.description}</h4>
+        <b>Unlock Unmatched Scalability, Compatibility, and Data Accessibility</b>
+        <p>Empower your data infrastructure to adapt, scale, and deliver without compromise.</p>
         <div className="pt-24 font-semibold flex gap-2">
           <Button size="sm" className="font-semibold">Join waitlist</Button>
           <Button variant="outline" className="">Read the whitepaper</Button>
@@ -56,10 +58,13 @@ const FeatureSection = () => {
         <div className="relative h-full break-inside-avoid rounded-2xl border border-neutral-200/50 bg-neutral-50 [--accent-color:#20808D]">
           <div className="px-8 py-4">
               <div>
-                <span className="font-bold underline underline-offset-2 pr-1.5">
-                  100%
-                </span>
-                compatibility with Elasticsearch/OpenSearch
+                <p>Scalability & Cost Efficiency</p>
+                <ul>
+                  <li><b>Cloud-Native Architecture</b> - Leverages the modern separation of compute and storage, ensuring flexibility and optimized resource utilization.</li>
+                  <li><b>Eliminates Data Replication</b> - Utilizes cost-effective, durable storage solutions like Amazon S3, reducing overhead while maintaining reliability.</li>
+                  <li><b>Node-Agnostic Data Management</b> - Decouples data from compute nodes, eliminating state dependencies, enabling seamless and safe scaling without constraints.</li>                  
+                </ul>
+                
               </div>
           </div>
         </div>
@@ -67,15 +72,31 @@ const FeatureSection = () => {
         <div className="relative h-full break-inside-avoid rounded-2xl border border-neutral-200/50 bg-neutral-50 [--accent-color:#20808D]">
           <div className="px-8 py-4">
             <div>
-              Serverless Architecture. Scale without limits.
-
+              <p>Seamless Compatibility</p>
+              <p><b>Full Elasticsearch API Compatibility</b> - 100% alignment with Elasticsearch (ES) query APIs ensures a smooth integration experience for developers and existing workflows.</p>
+              Serverless ArchitectScalability & Cost Efficiencyure. Scale without limits.
             </div>
+          </div>
+        </div>
+
+        <div className="relative h-full break-inside-avoid rounded-2xl border border-neutral-200/50 bg-neutral-50 [--accent-color:#20808D]">
+          <div className="px-8 py-4">
+            <div>Unparalleled Data Accessibility</div>
+            <ul>
+              <li><b>Beyond the Elasticsearch API</b> - Access data directly without relying exclusively on Elasticsearch, providing unparalleled flexibility.</li>
+              <li><b>Efficient Data Utilization</b> - No need to maintain duplicate data for non-production purposes like reporting or analytics, reducing redundancy and cost.</li>
+              <li><b>Flexible Data Views</b> - ES becomes just one perspective on your data. Other integrations include:
+                 <ul>
+                  <li><b>Trino (SQL Engine)</b> - Power advanced analytics and reporting with seamless compatibility with tools like Tableau.</li>
+                  <li><b>RAG Solutions for AI</b> - Enrich large language models (LLMs) with real-time, context-aware insights.</li>
+                 </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   )
-
 }
 
 export default function Home() {
