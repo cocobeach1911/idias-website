@@ -93,6 +93,7 @@ const FeatureSection = () => {
               </li>
             </ul>
           </div>
+        </div>
       </div>
     </div>
   )
