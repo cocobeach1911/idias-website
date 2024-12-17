@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button";
 
 const data = {
   main: {
-    title: "Reimagine data lake search and analytics!",
+    title: "Unleash Data Search Power with Unmatched Scalability and Assessibility",
     description: "Index your vector, text, geospatial and JSON data for the most efficient hybrid search and real-time analytics at any scale",
   },
 }
